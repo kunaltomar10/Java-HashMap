@@ -1,8 +1,8 @@
 import java.util.HashMap;
+import java.util.Collection;
 import java.util.Map;
-import java.util.Set;
 
-public class MapSetView {
+public class MapValues {
     public static void main(String[] args) {
 
         Map<Integer, String> map = new HashMap<>();
@@ -11,12 +11,10 @@ public class MapSetView {
         map.put(2, "White");
         map.put(3, "Blue");
         map.put(4, "Black");
-        map.put(4, "Green");
+        map.put(5, "Green");
 
-        Set<Map.Entry<Integer, String>>set = map.entrySet();
+        Collection<String> values = map.values();
 
-        System.out.println("Set values: " + set);
-        
-      
+        System.out.println("Collection of values: " + values);
     }
 }
